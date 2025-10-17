@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grab Fare Estimator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🚗 Grab Fare Estimator</h1>
+    <form id="fareForm">
+      <label>Distance (km): <input type="number" id="distance" step="0.1" required /></label>
+      <label>Duration (minutes): <input type="number" id="duration" required /></label>
+      <label>Time of Day:
+        <select id="timeOfDay">
+          <option value="morning">Morning Rush (6–9 AM)</option>
+          <option value="midday">Midday (10 AM–3 PM)</option>
+          <option value="evening">Evening Rush (4–8 PM)</option>
+          <option value="late">Late Night (9 PM–12 AM)</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="rainy" /> Rainy or High-Demand Zone</label>
+      <label>Promo Discount (₱): <input type="number" id="promo" value="0" /></label>
+      <label><input type="checkbox" id="buffer" /> Include Fare Buffer</label>
+      <button type="submit">Estimate Fare</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
