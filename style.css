@@ -53,3 +53,9 @@ button:hover {
   text-align: center;
   color: #34495e;
 }
+
+input[type="number"].no-step::-webkit-inner-spin-button,
+input[type="number"].no-step::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
